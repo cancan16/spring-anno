@@ -1,11 +1,8 @@
 package com.enjoy.cap2.config;
 
 import com.enjoy.cap1.Person;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.*;
 import org.springframework.context.annotation.ComponentScan.Filter;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
 
 /**
  * @Author Liu, cancan
@@ -21,6 +18,7 @@ public class Cap2MainConfig {
     //给容器中注册一个bean, 类型为返回值的类型,
     @Bean
     public Person person01() {
+        new ComponentScanBeanDefinitionParser();
         return new Person("james", 20);
     }
 }
