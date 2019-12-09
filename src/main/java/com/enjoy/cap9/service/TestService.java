@@ -15,9 +15,9 @@ public class TestService {
 //    @Resource(name = "testDao")
 //    @Qualifier("testDao")
     @Autowired
-    private TestDao testDao2;
+    private TestDao testDao;
 
     public void println() {
-        System.out.println(testDao2);
+        System.out.println(testDao);
     }
 }

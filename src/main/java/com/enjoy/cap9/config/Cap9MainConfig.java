@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class Cap9MainConfig {
     //spring进行自装配的时候默认首选的bean
 
-    @Bean("testDao1")
+    @Bean("testDao")
     public TestDao testDao() {
         TestDao testDao = new TestDao();
         testDao.setFlag("2");
