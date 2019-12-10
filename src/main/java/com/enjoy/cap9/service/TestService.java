@@ -12,12 +12,12 @@ public class TestService {
     //效果是一样的,与Autowired一样可以装配bean
     //1,不支持Primary功能
     //2,不支持Autowired false
-//    @Resource(name = "testDao")
+//    @Resource
 //    @Qualifier("testDao")
     @Autowired
-    private TestDao testDao;
+    private TestDao testDao1;
 
     public void println() {
-        System.out.println(testDao);
+        System.out.println(testDao1);
     }
 }
