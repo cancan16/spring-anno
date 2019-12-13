@@ -14,7 +14,6 @@ public class OrderService {
     public void addOrder() {
         orderDao.insert();
         System.out.println("²Ù×÷Íê³É.........");
-
-        //int a = 1/0;
+        int a = 1 / 0;
     }
 }

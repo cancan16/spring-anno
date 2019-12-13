@@ -11,7 +11,7 @@ public class OrderDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    //²Ù×÷Êı¾İµÄ·½·¨
+    //æ“ä½œæ•°æ®çš„æ–¹æ³•
     public void insert() {
         String sql = "insert into `order` (ordertime, ordermoney, orderstatus) values(?,?,?)";
         jdbcTemplate.update(sql, new Date(), 20, 0);
